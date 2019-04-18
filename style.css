@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(161, 160, 154);
+}
+
+.images{
+    background-image: url('images/img-3.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    flex: 0 0 80%;
+    min-height: 70vh;
+    border: 3px solid skyblue;
+    border-radius: 7px;
+    box-shadow: 5px 10px black;
+    position: relative;
+}
+.btn{
+    display: inline-block;
+    background: floralwhite;
+    color: black;
+    border: 2px;
+    padding: 1rem;
+    border-radius: 3px;
+    outline: none;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%)
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%)
+}
+.btn:active{
+    background: rgb(55, 0, 252);
+    box-shadow: 3px 3px 5px;
+}
+.btn:hover{
+    background: gold;
+}

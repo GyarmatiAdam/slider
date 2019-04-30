@@ -10,6 +10,7 @@ prev.addEventListener('click', prevSlide);
 function nextSlide(){
     container.animate([{opacity:'0.1'}, {opacity:'0.3'}, {opacity:'0.5'}, {opacity:'0.8'}], {duration: 1000, fill: 'forwards'});
     
+/** counter goes back to default image and starts again*/
     if(counter === 3){
         counter = -1;
     }
